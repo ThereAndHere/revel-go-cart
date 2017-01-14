@@ -2,7 +2,7 @@
 
 set -eo pipefail
 
-version=${GOVERSION:-1.3.3}
+version=${GOVERSION:-1.7.4}
 
 srcfile=${GOFILE:-go$version.$(uname|tr A-Z a-z)-amd64.tar.gz}
 
@@ -35,7 +35,7 @@ echo "Get Go 3rd packages:"
 
 echo "Fetching Revel web framework..."
 
-go get github.com/revel/revel
+#go get github.com/revel/revel
 
 echo "Building Revel web framework..."
 
